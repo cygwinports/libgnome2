@@ -3,30 +3,30 @@ libgnome2
 This is the non-gui part of the GNOME library.
 
 Runtime requirements:
-  cygwin-1.5.21-2
-  GConf2-2.16.0-1
-  ORBit2-2.14.3-1
-  gnome-vfs2-2.12.2-1
+  cygwin-1.5.24-2
+  GConf2-2.18.0.1-1
+  ORBit2-2.14.7-1
+  gnome-vfs2-2.16.2-1
   libaudiofile0-0.2.6-2
-  libbonobo2-2.14.0-1
-  libesound0-0.2.36-1
+  libbonobo2-2.16.0-1
+  libesound0-0.2.38-1
   libpopt0-1.10.4-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.21-2
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.6-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  gtk-doc-1.7-1
-  intltool-0.35.0-1
-  libtool1.5-1.5.23a-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gtk-doc-1.8-1
+  intltool-0.35.5-1
+  libtool1.5-1.5.23a-2
   make-3.81-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.gnome.org/
@@ -37,17 +37,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgnome2-2.16.0-1-src.tar.bz2
+  unpack libgnome2-2.18.0-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgnome2-2.16.0-1.cygport all
+  cygport ./libgnome2-2.18.0-1.cygport all
 
 This will create:
-  /usr/src/libgnome2-2.16.0-1-src.tar.bz2
-  /usr/src/libgnome2-2.16.0-1.tar.bz2
-  /usr/src/libgnome2-devel-2.16.0-1.tar.bz2
-  /usr/src/libgnome2-doc-2.16.0-1.tar.bz2
+  /usr/src/libgnome2-2.18.0-1-src.tar.bz2
+  /usr/src/libgnome2-2.18.0-1.tar.bz2
+  /usr/src/libgnome2-devel-2.18.0-1.tar.bz2
 
 -------------------------------------------
 
@@ -78,13 +77,13 @@ Files included in the binary packages:
   /usr/lib/bonobo/monikers/cygmoniker_extra_2.dll
   /usr/lib/bonobo/monikers/libmoniker_extra_2.la
   /usr/lib/bonobo/servers/GNOME_Moniker_std.server
-  /usr/share/doc/Cygwin/libgnome2-2.16.0.README
-  /usr/share/doc/libgnome2-2.16.0/AUTHORS
-  /usr/share/doc/libgnome2-2.16.0/COPYING.LIB
-  /usr/share/doc/libgnome2-2.16.0/ChangeLog
-  /usr/share/doc/libgnome2-2.16.0/INSTALL
-  /usr/share/doc/libgnome2-2.16.0/NEWS
-  /usr/share/doc/libgnome2-2.16.0/README
+  /usr/share/doc/Cygwin/libgnome2-2.18.0.README
+  /usr/share/doc/libgnome2-2.18.0/AUTHORS
+  /usr/share/doc/libgnome2-2.18.0/COPYING.LIB
+  /usr/share/doc/libgnome2-2.18.0/ChangeLog
+  /usr/share/doc/libgnome2-2.18.0/INSTALL
+  /usr/share/doc/libgnome2-2.18.0/NEWS
+  /usr/share/doc/libgnome2-2.18.0/README
   /usr/share/locale/am/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/ar/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/az/LC_MESSAGES/libgnome-2.0.mo
@@ -179,8 +178,6 @@ Files included in the binary packages:
   /usr/lib/libgnome-2.dll.a
   /usr/lib/libgnome-2.la
   /usr/lib/pkgconfig/libgnome-2.0.pc
-
-(libgnome2-doc)
   /usr/share/gtk-doc/html/libgnome/ch01s02.html
   /usr/share/gtk-doc/html/libgnome/ch01s03.html
   /usr/share/gtk-doc/html/libgnome/ch01s04.html
@@ -212,6 +209,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.18.0-1 -----
+Version bump for GNOME 2.18.
 
 ----- version 2.16.0-1 -----
 Version bump for GNOME 2.16.
