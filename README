@@ -4,25 +4,27 @@ This is the non-gui part of the GNOME library.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  GConf2-2.18.0.1-1
-  ORBit2-2.14.7-1
-  gnome-vfs2-2.16.2-1
-  libaudiofile0-0.2.6-2
-  libbonobo2-2.16.0-1
+  GConf2-2.20.1-1
+  ORBit2-2.14.10-1
+  glib2-2.14.4-1
+  gnome-vfs2-2.20.1-1
+  libaudiofile0-0.2.6-3
+  libbonobo2-2.20.1-1
   libesound0-0.2.38-1
+  libintl8-0.15-1
   libpopt0-1.10.4-1
 
 Build requirements:
 (besides corresponding devel packages)
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
+  automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.2.11-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  gtk-doc-1.8-1
-  intltool-0.35.5-1
+  gtk-doc-1.9-1
+  intltool-0.36.2-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
@@ -37,16 +39,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgnome2-2.18.0-1-src.tar.bz2
+  unpack libgnome2-2.20.1.1-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgnome2-2.18.0-1.cygport all
+  cygport ./libgnome2-2.20.1.1-1.cygport all
 
 This will create:
-  /usr/src/libgnome2-2.18.0-1-src.tar.bz2
-  /usr/src/libgnome2-2.18.0-1.tar.bz2
-  /usr/src/libgnome2-devel-2.18.0-1.tar.bz2
+  /usr/src/libgnome2-2.20.1.1-1-src.tar.bz2
+  /usr/src/libgnome2-2.20.1.1-1.tar.bz2
+  /usr/src/libgnome2-devel-2.20.1.1-1.tar.bz2
 
 -------------------------------------------
 
@@ -55,6 +57,8 @@ Files included in the binary packages:
 (libgnome2)
   /etc/gconf/schemas/desktop_gnome_accessibility_keyboard.schemas
   /etc/gconf/schemas/desktop_gnome_accessibility_startup.schemas
+  /etc/gconf/schemas/desktop_gnome_applications_at_mobility.schemas
+  /etc/gconf/schemas/desktop_gnome_applications_at_visual.schemas
   /etc/gconf/schemas/desktop_gnome_applications_browser.schemas
   /etc/gconf/schemas/desktop_gnome_applications_help_viewer.schemas
   /etc/gconf/schemas/desktop_gnome_applications_terminal.schemas
@@ -77,15 +81,17 @@ Files included in the binary packages:
   /usr/lib/bonobo/monikers/cygmoniker_extra_2.dll
   /usr/lib/bonobo/monikers/libmoniker_extra_2.la
   /usr/lib/bonobo/servers/GNOME_Moniker_std.server
-  /usr/share/doc/Cygwin/libgnome2-2.18.0.README
-  /usr/share/doc/libgnome2-2.18.0/AUTHORS
-  /usr/share/doc/libgnome2-2.18.0/COPYING.LIB
-  /usr/share/doc/libgnome2-2.18.0/ChangeLog
-  /usr/share/doc/libgnome2-2.18.0/INSTALL
-  /usr/share/doc/libgnome2-2.18.0/NEWS
-  /usr/share/doc/libgnome2-2.18.0/README
+  /usr/share/doc/Cygwin/libgnome2-2.20.1.1.README
+  /usr/share/doc/libgnome2-2.20.1.1/AUTHORS
+  /usr/share/doc/libgnome2-2.20.1.1/COPYING.LIB
+  /usr/share/doc/libgnome2-2.20.1.1/ChangeLog
+  /usr/share/doc/libgnome2-2.20.1.1/MAINTAINERS
+  /usr/share/doc/libgnome2-2.20.1.1/NEWS
+  /usr/share/doc/libgnome2-2.20.1.1/README
+  /usr/share/gnome-background-properties/gnome-default.xml
   /usr/share/locale/am/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/ar/LC_MESSAGES/libgnome-2.0.mo
+  /usr/share/locale/as/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/az/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/be/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/bg/LC_MESSAGES/libgnome-2.0.mo
@@ -97,9 +103,11 @@ Files included in the binary packages:
   /usr/share/locale/cy/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/da/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/de/LC_MESSAGES/libgnome-2.0.mo
+  /usr/share/locale/dz/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/el/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/en_CA/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/en_GB/LC_MESSAGES/libgnome-2.0.mo
+  /usr/share/locale/eo/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/es/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/et/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/eu/LC_MESSAGES/libgnome-2.0.mo
@@ -122,6 +130,7 @@ Files included in the binary packages:
   /usr/share/locale/ku/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/lt/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/lv/LC_MESSAGES/libgnome-2.0.mo
+  /usr/share/locale/mg/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/mk/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/ml/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/mn/LC_MESSAGES/libgnome-2.0.mo
@@ -130,6 +139,7 @@ Files included in the binary packages:
   /usr/share/locale/ne/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/nl/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/nn/LC_MESSAGES/libgnome-2.0.mo
+  /usr/share/locale/oc/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/or/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/pa/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/pl/LC_MESSAGES/libgnome-2.0.mo
@@ -158,6 +168,7 @@ Files included in the binary packages:
   /usr/share/locale/zh_HK/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/libgnome-2.0.mo
   /usr/share/man/man7/gnome-options.7.gz
+  /usr/share/pixmaps/backgrounds/gnome/background-default.jpg
 
 (libgnome2-devel)
   /usr/include/libgnome-2.0/libgnome/gnome-config.h
@@ -178,13 +189,25 @@ Files included in the binary packages:
   /usr/lib/libgnome-2.dll.a
   /usr/lib/libgnome-2.la
   /usr/lib/pkgconfig/libgnome-2.0.pc
-  /usr/share/gtk-doc/html/libgnome/ch01s02.html
-  /usr/share/gtk-doc/html/libgnome/ch01s03.html
-  /usr/share/gtk-doc/html/libgnome/ch01s04.html
-  /usr/share/gtk-doc/html/libgnome/ch01s05.html
+  /usr/share/gtk-doc/html/libgnome/ch01.html
+  /usr/share/gtk-doc/html/libgnome/ch02.html
+  /usr/share/gtk-doc/html/libgnome/ch03.html
+  /usr/share/gtk-doc/html/libgnome/ch04.html
+  /usr/share/gtk-doc/html/libgnome/ch05.html
+  /usr/share/gtk-doc/html/libgnome/ch06.html
   /usr/share/gtk-doc/html/libgnome/home.png
   /usr/share/gtk-doc/html/libgnome/index.html
   /usr/share/gtk-doc/html/libgnome/index.sgml
+  /usr/share/gtk-doc/html/libgnome/ix01.html
+  /usr/share/gtk-doc/html/libgnome/ix02.html
+  /usr/share/gtk-doc/html/libgnome/ix03.html
+  /usr/share/gtk-doc/html/libgnome/ix04.html
+  /usr/share/gtk-doc/html/libgnome/ix05.html
+  /usr/share/gtk-doc/html/libgnome/ix06.html
+  /usr/share/gtk-doc/html/libgnome/ix07.html
+  /usr/share/gtk-doc/html/libgnome/ix08.html
+  /usr/share/gtk-doc/html/libgnome/ix09.html
+  /usr/share/gtk-doc/html/libgnome/ix10.html
   /usr/share/gtk-doc/html/libgnome/left.png
   /usr/share/gtk-doc/html/libgnome/libgnome-gnome-config.html
   /usr/share/gtk-doc/html/libgnome/libgnome-gnome-exec.html
@@ -209,6 +232,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.20.1.1-1 -----
+Version bump for GNOME 2.20.
 
 ----- version 2.18.0-1 -----
 Version bump for GNOME 2.18.

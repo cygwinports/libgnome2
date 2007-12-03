@@ -1,4 +1,4 @@
 category: Gnome
-requires: cygwin GConf2 ORBit2 gnome-vfs2 libaudiofile0 libbonobo2 libesound0 libpopt0
+requires: cygwin GConf2 ORBit2 glib2 gnome-vfs2 libaudiofile0 libbonobo2 libesound0 libintl8 libpopt0
 sdesc: "Non-gui part of the GNOME library (runtime)"
 ldesc: "This is the non-gui part of the GNOME library."
