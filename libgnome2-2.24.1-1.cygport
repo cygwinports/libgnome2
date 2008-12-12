@@ -1,0 +1,9 @@
+ORIG_PN=libgnome
+
+inherit gnome2
+
+PKG_NAMES="${PN} ${PN}_0 ${PN}-devel"
+libgnome2_0_CONTENTS="etc/ usr/bin/ usr/lib/bonobo/ usr/share/doc/
+                      usr/share/gnome-background-properties/
+                      usr/share/locale/ usr/share/man/ usr/share/pixmaps/"
+libgnome2_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
