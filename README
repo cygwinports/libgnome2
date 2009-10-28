@@ -3,29 +3,30 @@ libgnome2
 This is the non-gui part of the GNOME library.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-62
   libaudiofile0-0.2.6-10
-  libbonobo2_0-2.24.1-1
-  libgconf2_4-2.26.0-1
-  libglib2.0_0-2.20.0-1
-  libgnomevfs2_0-2.26.0-1
+  libbonobo2_0-2.24.2-1
+  libgcc1-4.3.4-1
+  libgconf2_4-2.28.0-1
+  libglib2.0_0-2.22.2-1
+  libgnomevfs2_0-2.24.2-1
   libesd0-0.2.41-10
-  libintl8-0.17-10
+  libintl8-0.17-11
   libORBit2_0-2.14.17-1
   libpopt0-1.6.4-4
 
 Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
+  automake1.11-1.11-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gnome-common-2.28.0-1
   gtk-doc-1.11-2
   intltool-0.40.6-1
-  libtool-2.2.6a-2
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
@@ -39,204 +40,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgnome2-2.26.0-1-src.tar.bz2
+  unpack libgnome2-2.28.0-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgnome2-2.26.0-1.cygport all
+  cygport ./libgnome2-2.28.0-1.cygport all
 
 This will create:
-  /usr/src/libgnome2-2.26.0-1-src.tar.bz2
-  /usr/src/libgnome2-devel-2.26.0-1.tar.bz2
-  /usr/src/libgnome2_0-2.26.0-1.tar.bz2
+  /usr/src/libgnome2-2.28.0-1-src.tar.bz2
+  /usr/src/libgnome2-devel-2.28.0-1.tar.bz2
+  /usr/src/libgnome2_0-2.28.0-1.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libgnome2_0)
-  /etc/gconf/schemas/desktop_gnome_accessibility_keyboard.schemas
-  /etc/gconf/schemas/desktop_gnome_accessibility_startup.schemas
-  /etc/gconf/schemas/desktop_gnome_applications_at_mobility.schemas
-  /etc/gconf/schemas/desktop_gnome_applications_at_visual.schemas
-  /etc/gconf/schemas/desktop_gnome_applications_browser.schemas
-  /etc/gconf/schemas/desktop_gnome_applications_office.schemas
-  /etc/gconf/schemas/desktop_gnome_applications_terminal.schemas
-  /etc/gconf/schemas/desktop_gnome_applications_window_manager.schemas
-  /etc/gconf/schemas/desktop_gnome_background.schemas
-  /etc/gconf/schemas/desktop_gnome_file_views.schemas
-  /etc/gconf/schemas/desktop_gnome_interface.schemas
-  /etc/gconf/schemas/desktop_gnome_lockdown.schemas
-  /etc/gconf/schemas/desktop_gnome_peripherals_keyboard.schemas
-  /etc/gconf/schemas/desktop_gnome_peripherals_mouse.schemas
-  /etc/gconf/schemas/desktop_gnome_sound.schemas
-  /etc/gconf/schemas/desktop_gnome_thumbnail_cache.schemas
-  /etc/gconf/schemas/desktop_gnome_thumbnailers.schemas
-  /etc/gconf/schemas/desktop_gnome_typing_break.schemas
-  /etc/postinstall/libgnome2.sh
-  /etc/preremove/libgnome2.sh
-  /etc/sound/events/gnome-2.soundlist
-  /etc/sound/events/gtk-events-2.soundlist
-  /usr/bin/cyggnome-2-0.dll
-  /usr/bin/gnome-open.exe
-  /usr/share/doc/libgnome2/AUTHORS
-  /usr/share/doc/libgnome2/COPYING.LIB
-  /usr/share/doc/libgnome2/ChangeLog
-  /usr/share/doc/libgnome2/MAINTAINERS
-  /usr/share/doc/libgnome2/NEWS
-  /usr/share/doc/libgnome2/README
-  /usr/share/gnome-background-properties/gnome-default.xml
-  /usr/share/locale/am/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ar/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/as/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/az/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/be/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/bg/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/bn/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/bn_IN/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/bs/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ca/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/cs/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/cy/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/da/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/de/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/dz/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/el/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/en_CA/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/eo/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/es/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/et/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/eu/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/fa/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/fi/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/fr/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/fur/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ga/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/gl/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/gu/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/he/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/hi/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/hr/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/hu/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/id/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/is/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/it/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ja/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ka/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ko/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ku/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/lt/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/lv/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/mai/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/mg/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/mk/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ml/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/mn/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/mr/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ms/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/nb/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ne/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/nl/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/nn/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/oc/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/or/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/pa/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/pl/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/pt/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ro/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ru/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/rw/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/si/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/sk/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/sl/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/sq/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/sr/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/sr@ije/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/sr@latin/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/sv/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/ta/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/te/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/th/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/tr/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/tt/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/uk/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/vi/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/wa/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/xh/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/yi/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/zh_HK/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/libgnome-2.0.mo
-  /usr/share/man/man7/gnome-options.7.gz
-  /usr/share/pixmaps/backgrounds/gnome/background-default.jpg
-
-(libgnome2-devel)
-  /usr/include/libgnome-2.0/libgnome/gnome-config.h
-  /usr/include/libgnome-2.0/libgnome/gnome-exec.h
-  /usr/include/libgnome-2.0/libgnome/gnome-gconf.h
-  /usr/include/libgnome-2.0/libgnome/gnome-help.h
-  /usr/include/libgnome-2.0/libgnome/gnome-i18n.h
-  /usr/include/libgnome-2.0/libgnome/gnome-init.h
-  /usr/include/libgnome-2.0/libgnome/gnome-macros.h
-  /usr/include/libgnome-2.0/libgnome/gnome-program.h
-  /usr/include/libgnome-2.0/libgnome/gnome-score.h
-  /usr/include/libgnome-2.0/libgnome/gnome-sound.h
-  /usr/include/libgnome-2.0/libgnome/gnome-triggers.h
-  /usr/include/libgnome-2.0/libgnome/gnome-url.h
-  /usr/include/libgnome-2.0/libgnome/gnome-util.h
-  /usr/include/libgnome-2.0/libgnome/libgnome.h
-  /usr/include/libgnome-2.0/libgnome/libgnometypebuiltins.h
-  /usr/lib/bonobo/monikers/cygmoniker_extra_2.dll
-  /usr/lib/bonobo/monikers/libmoniker_extra_2.la
-  /usr/lib/bonobo/servers/GNOME_Moniker_std.server
-  /usr/lib/libgnome-2.dll.a
-  /usr/lib/libgnome-2.la
-  /usr/lib/pkgconfig/libgnome-2.0.pc
-  /usr/share/gtk-doc/html/libgnome/ch01.html
-  /usr/share/gtk-doc/html/libgnome/ch02.html
-  /usr/share/gtk-doc/html/libgnome/ch03.html
-  /usr/share/gtk-doc/html/libgnome/ch04.html
-  /usr/share/gtk-doc/html/libgnome/ch05.html
-  /usr/share/gtk-doc/html/libgnome/ch06.html
-  /usr/share/gtk-doc/html/libgnome/home.png
-  /usr/share/gtk-doc/html/libgnome/index.html
-  /usr/share/gtk-doc/html/libgnome/index.sgml
-  /usr/share/gtk-doc/html/libgnome/ix01.html
-  /usr/share/gtk-doc/html/libgnome/ix02.html
-  /usr/share/gtk-doc/html/libgnome/ix03.html
-  /usr/share/gtk-doc/html/libgnome/ix04.html
-  /usr/share/gtk-doc/html/libgnome/ix05.html
-  /usr/share/gtk-doc/html/libgnome/ix06.html
-  /usr/share/gtk-doc/html/libgnome/ix07.html
-  /usr/share/gtk-doc/html/libgnome/ix08.html
-  /usr/share/gtk-doc/html/libgnome/ix09.html
-  /usr/share/gtk-doc/html/libgnome/ix10.html
-  /usr/share/gtk-doc/html/libgnome/left.png
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-config.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-exec.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-gconf.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-help.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-i18n.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-init.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-program.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-score.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-sound.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-triggers.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-url.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-gnome-util.html
-  /usr/share/gtk-doc/html/libgnome/libgnome-libgnometypebuiltins.html
-  /usr/share/gtk-doc/html/libgnome/libgnome.devhelp
-  /usr/share/gtk-doc/html/libgnome/libgnome.devhelp2
-  /usr/share/gtk-doc/html/libgnome/libgnome.html
-  /usr/share/gtk-doc/html/libgnome/right.png
-  /usr/share/gtk-doc/html/libgnome/style.css
-  /usr/share/gtk-doc/html/libgnome/up.png
-
-------------------
-
 Port Notes:
+
+----- version 2.28.0-1 -----
+Version bump for GNOME 2.28.
 
 ----- version 2.26.0-1 -----
 Initial release of GNOME 2.26 for Cygwin 1.7.
