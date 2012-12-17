@@ -1,5 +1,0 @@
-category: Gnome
-requires: gconf-desktop-settings libbonobo2_0 libcanberra0 libgconf2_4 libglib2.0_0 libgnomevfs2_0 libintl8 libpopt0
-external-source: libgnome2
-sdesc: "Non-gui part of the GNOME library (runtime)"
-ldesc: "This is the non-gui part of the GNOME library."

@@ -1,5 +1,0 @@
-category: Gnome
-requires: libgnome2_0 libbonobo2-devel libcanberra-devel libgconf2-devel libglib2.0-devel libgnomevfs2-devel gettext popt
-external-source: libgnome2
-sdesc: "Non-gui part of the GNOME library (development)"
-ldesc: "This is the non-gui part of the GNOME library."
