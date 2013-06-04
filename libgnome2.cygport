@@ -8,6 +8,12 @@ CATEGORY="GNOME"
 SUMMARY="Non-gui part of the GNOME library"
 DESCRIPTION="This is the non-gui part of the GNOME library."
 
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/libgnome.git/plain/libgnome-2.11.1-scoreloc.patch
+	http://pkgs.fedoraproject.org/cgit/libgnome.git/plain/im-setting.patch
+	http://pkgs.fedoraproject.org/cgit/libgnome.git/plain/0001-Don-t-use-G_DISABLE_DEPRECATED.patch
+"
+
 PKG_NAMES="${PN}_0 ${PN}-devel gconf-desktop-schemas"
 libgnome2_0_CONTENTS="usr/bin/ usr/lib/bonobo/ usr/share/doc/
                       usr/share/gnome-background-properties/
